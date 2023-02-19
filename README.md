@@ -2,7 +2,7 @@
 
 > **Note**
 >
-> This has been tested to work for Version 2.0 of [Rider](https://play.google.com/store/apps/details?id=com.ketchapp.rider)
+> This has been tested to work for Version 2.00.1.00 of [Rider](https://play.google.com/store/apps/details?id=com.ketchapp.rider)
 
 > **Warning**
 >
