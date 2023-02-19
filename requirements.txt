@@ -1,0 +1,10 @@
+beautifulsoup4==4.11.2
+lxml==4.9.2
+packaging==23.0
+pure-python-adb==0.3.0.dev0
+PyQt5==5.15.9
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.11.1
+QDarkStyle==3.1
+QtPy==2.3.0
+soupsieve==2.3.2.post1
