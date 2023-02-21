@@ -14,7 +14,7 @@
 
 Edits save files of the Android game [Rider](https://play.google.com/store/apps/details?id=com.ketchapp.rider) developed by [Ketchapp games](http://www.ketchappgames.com/)
 
-## Setup
+# Setup
 
 ### PC side
 
