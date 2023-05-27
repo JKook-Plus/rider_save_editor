@@ -63,3 +63,11 @@ Run [main.py](../main.py)
 - Make it more user friendly
 - Make it more usable
 - Make it into an executable
+
+# FAQ
+
+### Q: 
+I get ```RuntimeError: ERROR: connecting to 127.0.0.1:5037 [WinError 10061] No connection could be made because the target machine actively refused it.``` when trying to run ```main.py```
+
+### A: 
+ADB is probally not running on host machine. Run ```adb devices``` in cmd or powershell.
