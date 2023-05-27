@@ -3,12 +3,14 @@
 > **Note**
 >
 > This has been tested to work for Version 2.00.1.00 of [Rider](https://play.google.com/store/apps/details?id=com.ketchapp.rider)
+>
+> Version naming for the app is different across Google Play and Apk sites such as APK pure.
 
 > **Warning**
 >
-> Requires Device to be rooted
+> Requires a rooted Android device
 >
-> I cannot promise that it will not break any other version of the application
+> I cannot promise that it will not break the functionality of the game
 
 # Info
 
