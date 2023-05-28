@@ -18,6 +18,8 @@ An editor of save files for the Android game [Rider](https://play.google.com/sto
 
 # Setup
 
+[![Setup](https://img.youtube.com/vi/8fLM0DfyGJk/0.jpg)](https://www.youtube.com/watch?v=8fLM0DfyGJk)
+
 ### PC side
 
 Install python ([3.11](https://www.python.org/downloads/release/python-3110/) tested).
