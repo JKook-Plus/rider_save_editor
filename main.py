@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QPushButton
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtCore import pyqtSlot, Qt
 import qdarkstyle
 import xml.etree.ElementTree as ET
 import json
@@ -18,7 +18,9 @@ class MainWidget(QMainWindow):
         self.setupADB()
         self.initUI()
         self.json_to_be = None
-    
+
+        self.setWindowFlags(self.windowFlags() | Qt.WindowStaysOnTopHint)
+
         self.editing_json_filename = "current_save.json"
         
         
