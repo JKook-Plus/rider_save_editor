@@ -41,7 +41,12 @@ class MainWidget(QMainWindow):
         full_push_button = QPushButton('Full Push', self)
         full_push_button.setToolTip('Force closes Rider\nPushes file from PC to data folder using ADB')
         full_push_button.move(10,50)
-        full_push_button.clicked.connect(self.full_push_data)
+        full_push_button.clicked.connect(lambda: self.full_push_data(self.editing_json_filename))
+
+        full_push_complete_save_button = QPushButton('Push Complete Save', self)
+        full_push_complete_save_button.setToolTip('Pushes the complete save to the device')
+        full_push_complete_save_button.move(10,90)
+        full_push_complete_save_button.clicked.connect(lambda: self.full_push_data("complete_save.json"))
 
         pull_without_kill_button = QPushButton('Full Pull (without kill)', self)
         pull_without_kill_button.setToolTip('Full pull without killing')
@@ -73,7 +78,7 @@ class MainWidget(QMainWindow):
         compress = QPushButton('Compress', self)
         compress.setToolTip('Remakes the com.ketchapp.rider_preferences.xml file')
         compress.move(610,170)
-        compress.clicked.connect(self.compress)
+        compress.clicked.connect(lambda: self.compress(self.editing_json_filename))
 
     @pyqtSlot()
     def kill_rider(self):
@@ -103,16 +108,17 @@ class MainWidget(QMainWindow):
         self.pull_data()
         self.understand()
         self.save()
-    
+        
     def full_pull_data(self):
         self.kill_rider()
         self.pull_data()
         self.understand()
         self.save()
     
-    def full_push_data(self):
+    def full_push_data(self, filename):
+        print(filename)
         self.kill_rider()
-        self.compress()
+        self.compress(filename)
         self.push_data()
         self.start_rider()
         
@@ -160,8 +166,8 @@ class MainWidget(QMainWindow):
     
 
 
-    def compress(self):
-        with open(self.editing_json_filename, 'r') as file:
+    def compress(self, filename):
+        with open(filename, 'r') as file:
             data_from_json_file = file.read()
 
         if data_from_json_file != "":
@@ -174,9 +180,9 @@ class MainWidget(QMainWindow):
                     print("Found")
 
             tree.write('com.ketchapp.rider_preferences.xml')
-            print("compressed")
+            print("Saved in correct format")
         else:
-            print("did not save as {0} is empty".format(self.editing_json_filename))
+            print("did not save as {0} is empty".format(filename))
 
 
 if __name__ == '__main__':
