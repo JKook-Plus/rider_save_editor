@@ -18,6 +18,8 @@ An editor of save files for the Android game [Rider](https://play.google.com/sto
 
 # Setup
 
+[![Setup](https://img.youtube.com/vi/8fLM0DfyGJk/0.jpg)](https://www.youtube.com/watch?v=8fLM0DfyGJk)
+
 ## PC side
 
 ### Get Python installed
@@ -29,8 +31,11 @@ Install ([Python](https://www.python.org)) ([3.11](https://www.python.org/downlo
 
 ### Download the code
 
-[Clone the repoository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) (using git) <br>```git clone https://github.com/JKook-Plus/rider_save_editor.git```
-<br>***OR*** <br>
+[Clone the repoository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) (using git) 
+<br>```git clone https://github.com/JKook-Plus/rider_save_editor.git```
+<br>
+***OR***
+<br>
 [Download it](https://github.com/JKook-Plus/rider_save_editor/archive/refs/heads/main.zip)
 
 ### Create a virtual environment (recommended)
