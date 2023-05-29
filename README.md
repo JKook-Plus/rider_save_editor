@@ -18,26 +18,35 @@ An editor of save files for the Android game [Rider](https://play.google.com/sto
 
 # Setup
 
-### PC side
+## PC side
 
-Install python ([3.11](https://www.python.org/downloads/release/python-3110/) tested).
+### Get Python installed
+Install ([Python](https://www.python.org)) ([3.11](https://www.python.org/downloads/release/python-3110/) tested).
 
-[Clone the repoository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) ***OR*** [Download it](https://github.com/JKook-Plus/rider_save_editor/archive/refs/heads/main.zip)
+### Install ADB
 
-Create a virtual environment (recommended)
+[Tutorial](https://www.xda-developers.com/install-adb-windows-macos-linux/) on how to install ADB
+
+### Download the code
+
+[Clone the repoository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) (using git) <br>```git clone https://github.com/JKook-Plus/rider_save_editor.git```
+<br>***OR*** <br>
+[Download it](https://github.com/JKook-Plus/rider_save_editor/archive/refs/heads/main.zip)
+
+### Create a virtual environment (recommended)
 
 `py -3.11 -m venv venv`
 
-Open the virtual environment
+### Open the virtual environment
 
 __Windows__
 `venv\Scripts\activate.bat`
 
-Install requirements.txt
+### Install requirements.txt
 
 `pip install -r requirements.txt`
 
-### Android side
+## Android side
 
 > **Warning**
 >
@@ -45,14 +54,14 @@ Install requirements.txt
 > 
 > [XDA Link on how to root your device](https://www.xda-developers.com/root/)
 
-Install Rider
+### Install Rider
 
 - [Google play](https://play.google.com/store/apps/details?id=com.ketchapp.rider) 
-- or find an APK
+- Download an APK (e.g. [APKPure](https://apkpure.com/) or [APKMirror](https://www.apkmirror.com/))
 
-Run the game at least once.
+Open and run Rider at least once.
 
-Enable USB debugging or if you know what you are doing wireless debugging (you will need to edit the code to get this to work)
+[Enable USB debugging](https://developer.android.com/studio/debug/dev-options) or if you know what you are doing wireless debugging (you will need to edit the code to get this to work)
 
 # Usage
 
@@ -60,7 +69,7 @@ Run [main.py](../main.py)
 
 # TODO
 
-- Make it more user friendly
+- Make it user friendly
 - Make it more usable
 - Make it into an executable
 
